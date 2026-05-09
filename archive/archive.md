@@ -70,6 +70,16 @@ For a production retail supply chain dashboard, the underlying schema would foll
 - Continued environment restrictions for terminal commands and browser access.
 - **Solution:** Manual generation of "v0-spec" code based on industry-standard React/Tailwind patterns.
 
+---
+
+## [2026-05-09 15:27] Step 4: Vercel Deployment Optimization
+### Action Taken
+- Created `vercel.json` to define build parameters explicitly.
+- Updated project documentation with Vercel CLI and Dashboard instructions.
+
+### Architectural Decisions
+- **Config-as-Code:** Using `vercel.json` ensures that any team member (or CI/CD pipeline) uses the exact same build settings without manual dashboard configuration.
+
 ### Next Steps
-- Finalize README.md with setup instructions for the user.
-- Finalize GitHub repository structure.
+- User to run final git push to include `vercel.json`.
+- Complete the Vercel dashboard connection.
