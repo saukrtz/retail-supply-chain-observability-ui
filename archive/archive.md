@@ -80,6 +80,15 @@ For a production retail supply chain dashboard, the underlying schema would foll
 ### Architectural Decisions
 - **Config-as-Code:** Using `vercel.json` ensures that any team member (or CI/CD pipeline) uses the exact same build settings without manual dashboard configuration.
 
-### Next Steps
-- User to run final git push to include `vercel.json`.
-- Complete the Vercel dashboard connection.
+---
+
+## [2026-05-09 15:35] Step 5: Post-Deployment Styling Fix
+### Action Taken
+- Identified missing `postcss.config.js` causing unstyled HTML output on Vercel.
+- Generated and implemented `postcss.config.js` with `tailwindcss` and `autoprefixer` plugins.
+
+### Architectural Decisions
+- **PostCSS Integration:** Essential for Vite-based projects using Tailwind CSS to ensure the build pipeline correctly transpiles utility classes into standard CSS.
+
+### Status
+- Awaiting user push to trigger Vercel redeployment.
